@@ -15,4 +15,8 @@ public class eulerProblems{
 		}
 		return sum;
 	}
+
+	public static int fibonacciSum(int upperBound){
+		
+	}
 }
