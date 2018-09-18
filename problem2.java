@@ -7,17 +7,7 @@ public class problem2{
 		int lastNum=firstNum;
 		int currNum=secondNum;
 		int sum=0;
-		if(lastNum%2==0){
-			sum+=lastNum;
-		}
-		while(currNum<=upperBound){
-			if(currNum%2==0){
-				sum+=currNum;
-			}
-			lastNum=currNum;
-			currNum+=lastNum;
-			System.out.println(currNum);
-		}
+		
 		return sum;
 	}
 }
