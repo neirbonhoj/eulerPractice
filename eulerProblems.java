@@ -1,6 +1,6 @@
 public class eulerProblems{
 	public static void main(String[] args){
-		System.out.println(multiples35(10));
+		System.out.println(multiples35(1000));
 	}
 
 	public static int multiples35(int upperBound){
