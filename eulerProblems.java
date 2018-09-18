@@ -5,7 +5,7 @@ public class eulerProblems{
 
 	public int multiples35(int upperBound){
 		int sum=0;
-		for(int i=0;i<=upperBound,i++){
+		for(int i=0;i<=upperBound;i++){
 			if(i%3==0 || i%5==0){
 				sum+=i;
 			}
