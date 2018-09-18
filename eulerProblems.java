@@ -1,6 +1,6 @@
-public class eulerProblems{
+public class eulerProblems extends commafy{
 	public static void main(String[] args){
-		System.out.println("Problem 1: Sum of multiples of 3 and 5 below 1,000 is "+multiples35(1000)+".");
+		System.out.println("Problem 1: Sum of multiples of 3 and 5 below 1,000 is "+commafyInt(multiples35(1000))+".");
 	}
 
 	public static int multiples35(int upperBound){
