@@ -4,10 +4,16 @@ public class problem2{
 	}
 
 	public static int evenFibonacciSum(int upperBound,int firstNum, int secondNum){
-		int lastNum=firstNum;
-		int currNum=secondNum;
+		int numOne=firstNum;
+		int numTwo=secondNum;
 		int sum=0;
-		
+		while(secondNum<=upperBound){
+			sum+=secondNum;
+			int newNum = numOne+numTwo;
+			numOne=numTwo;
+			numTwo=newNum;
+			System.out.println("Num1: "+firstNum+"- Num2: "+numTwo);
+		}
 		return sum;
 	}
 }
