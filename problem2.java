@@ -7,12 +7,12 @@ public class problem2{
 		int numOne=firstNum;
 		int numTwo=secondNum;
 		int sum=0;
-		while(secondNum<=upperBound){
+		while(numTwo<=upperBound){
 			sum+=secondNum;
 			int newNum = numOne+numTwo;
 			numOne=numTwo;
 			numTwo=newNum;
-			System.out.println("Num1: "+firstNum+"- Num2: "+numTwo);
+			System.out.println("Num1: "+numOne+"- Num2: "+numTwo);
 		}
 		return sum;
 	}
