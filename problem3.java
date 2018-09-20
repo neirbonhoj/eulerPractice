@@ -1,6 +1,6 @@
 public class problem3 extends commafy{
 	public static void main(String[] args){
-		System.out.println("Largest factor of 600851475143 is "+largestPrimeFactor(600851475143.0));
+		System.out.println("Largest factor of 600851475143 is "+largestPrimeFactor((600851475143.0)));
 	}
 
 	public static double largestPrimeFactor(double num){
