@@ -1,6 +1,6 @@
-public class problem4{
+public class problem4 extends commafy{
 	public static void main(String[] args){
-		largestPalindrome(2);
+		largestPalindrome(3);
 	}
 
 	public static void largestPalindrome(int digit){
@@ -9,19 +9,20 @@ public class problem4{
 			size*=10;
 		}
 		int num=size;
-		String lPali="";
+		String lPali="0";
 		for(int i=num;i<size*10-1;i++){
 			for(int j=num;j<size*10-1;j++){
-				String numS = num+"";
+				String numS = j*i+"";
 				String reverse="";
+				
 				for(int k=numS.length()-1;k>=0;k--){
 					reverse+=numS.substring(k,k+1);
 				}
-				if(numS.equals(reverse)){
+				if(numS.equals(reverse)&&(j*i>Integer.parseInt(lPali))){
 					lPali=numS;
 				}
 			}
 		}
-		System.out.println(lPali);
+		System.out.println(Integer.parseInt(lPali));
 	}
 }
