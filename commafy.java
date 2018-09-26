@@ -1,7 +1,4 @@
-public class commafy{
-	public static void main(String[] args){
-		System.out.println(commafyInt(1403087168));
-	}
+public abstract usefulMethods{
 	public static String commafyInt(int num){
 		String toReturn="";
 		if(num>=1000){
@@ -15,5 +12,21 @@ public class commafy{
 			return num+"";
 		}
 		return toReturn;
+	}
+
+	public static boolean isPrime(int x){
+		if(x<2){
+			return false;
+		} else if(x==2){
+			return true;
+		} else if(x%2==0){
+			return false;
+		}
+		for(int i=3;i*i<=x;i+=2){
+			if(x%i==0){
+				return false;
+			}
+		}
+		return true;
 	}
 }
